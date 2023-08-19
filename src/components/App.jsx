@@ -1,3 +1,8 @@
+import { FriendList } from "./FriendList";
+import { Profile } from "./Profile";
+import { Statistics } from "./Statistics";
+import user from "../user.json";
+
 export const App = () => {
   return (
     <div
@@ -10,7 +15,11 @@ export const App = () => {
         color: '#010101'
       }}
     >
+      <Profile userInfo={user} />
+      <Statistics />
+      <FriendList/>
       React homework template
     </div>
   );
 };
+
